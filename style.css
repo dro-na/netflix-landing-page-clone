@@ -1,0 +1,280 @@
+/* Reset default browser spacing and layout behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /*  Dark overlay method instead of brightness filter. */
+    background-color: black;
+}
+
+.main-contain {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+        url(images/netflix-landing-page-bg.jpg) center/cover no-repeat;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 0;
+}
+
+.main-nav {
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    padding-left: 6em;
+    width: 90%;
+}
+
+
+.main-nav .main-logo svg {
+    width: 5rem;
+    fill: red;
+}
+
+.main-nav button {
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.main-nav button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.text-container {
+    color: white;
+    text-align: center;
+    margin: auto;
+    /* max-width: 400px; */
+    padding-top: 5em;
+}
+
+.text-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+
+}
+
+.text-container :nth-child(2) {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2em;
+    padding-top: .4em;
+}
+
+.text-container :last-child {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+form {
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: .5em;
+}
+
+form :first-child {
+    width: 360px;
+    height: 3em;
+    padding-left: 1em;
+    background: black;
+    border: 1px solid gray;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+form :last-child {
+    padding: 15px 45px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+
+@media (min-width: 600px) {
+
+    form {
+        flex-flow: row;
+    }
+
+    form :last-child {
+        padding: 19px 35px;
+    }
+
+    .main-nav .main-logo svg {
+        width: 8rem;
+        fill: red;
+    }
+
+    .textandform {
+        display: flex;
+        color: white;
+        flex-flow: column;
+        padding-top: 60px;
+    }
+
+
+
+
+    .text-container {
+        max-width: 400px;
+    }
+
+}
+
+
+
+@media (min-width: 1000px) {
+    .text-container h1 {
+        font-size: 2.5em;
+    }
+
+    .text-container {
+        max-width: 500px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .text-container h1 {
+        font-size: 4em;
+    }
+
+    .text-container p {
+        font-weight: bold;
+        font-size: 1.2;
+    }
+
+    .text-container {
+        max-width: 800px;
+        padding-top: 80px;
+    }
+}
+
+
+#movie {
+    border-top: 3px solid red;
+    border-bottom: none;
+}
+
+
+.movie {
+    background-color: black;
+    border: 3px solid red;
+    border-top: none;
+    margin: auto;
+    display: flex;
+    gap: .5em;
+    width: 100%;
+    max-width: 61%;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+.card {
+    width: 100%;
+    flex-flow: row;
+}
+
+.col {
+    display: flex;
+    gap: 1em;
+    max-width: 100%;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-bottom: 2em;
+
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* border: 2px solid white; */
+
+}
+
+
+.main-footer ul li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: rgb(190, 189, 189);
+    line-height: 2em;
+}
+
+.main {
+    max-width: 90%;
+}
+
+
+.main-footer div {
+    text-align: left;
+
+}
+
+
+.main a {
+    padding-top: 2em;
+    color: white;
+    text-decoration: underline;
+    font-family: arial;
+    color: gray;
+    letter-spacing: .1em;
+    display: block;
+    padding-left: 1em;
+
+}
+
+@media (min-width: 755px) {
+    .main a {
+        padding-left: 11em;
+    }
+}
+
+@media (min-width: 1284px) {
+    .main a {
+        padding-left: 22em;
+    }
+}
+
+
+
+.main-footer {
+    gap: 4em;
+    margin-top: 2em;
+}
