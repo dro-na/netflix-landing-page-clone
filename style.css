@@ -192,7 +192,7 @@ form :last-child {
     gap: .5em;
     width: 100%;
     max-width: 61%;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; /* THIS IS THE FIX - allows wrapping to next line */
     justify-content: center;
     margin-top: 2em;
 
@@ -203,10 +203,18 @@ form :last-child {
     flex-flow: row;
 }
 
+/* NEW: Ensures images scale properly and don't overflow */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .col {
     display: flex;
     gap: 1em;
     max-width: 100%;
+    min-width: 300px; /* Controls when columns wrap to next line */
 }
 
 footer {
